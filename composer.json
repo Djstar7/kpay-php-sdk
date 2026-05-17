@@ -1,0 +1,47 @@
+{
+  "name": "kpay/sdk",
+  "description": "SDK officiel KPay (PHP / Laravel) — paiements & retraits Mobile Money, mode USSD ou passerelle hébergée. Sans dépendance imposée.",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://admin.kpay.site",
+  "keywords": [
+    "kpay",
+    "mobile-money",
+    "payments",
+    "mtn-money",
+    "orange-money",
+    "cameroun",
+    "freemopay",
+    "laravel",
+    "sdk"
+  ],
+  "support": {
+    "source": "https://admin.kpay.site",
+    "docs": "https://admin.kpay.site"
+  },
+  "require": {
+    "php": ">=8.1",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kpay\\Sdk\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Kpay\\Sdk\\Laravel\\KpayServiceProvider"
+      ],
+      "aliases": {
+        "Kpay": "Kpay\\Sdk\\Laravel\\Kpay"
+      }
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true
+  }
+}
