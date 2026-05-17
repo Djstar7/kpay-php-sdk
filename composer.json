@@ -1,5 +1,5 @@
 {
-  "name": "kpay/sdk",
+  "name": "djstar7/kpay-sdk",
   "description": "SDK officiel KPay (PHP / Laravel) — paiements & retraits Mobile Money, mode USSD ou passerelle hébergée. Sans dépendance imposée.",
   "type": "library",
   "license": "MIT",
